@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { userFields } from '../constants';
 
-const BASE_URL = 'https://ride-share-api.onrender.com';
+const BASE_URL = 'http://localhost:8000';
 
 export async function getUserById(userId){
     return await axios.get(`${BASE_URL}/api/v1/user/${userId}`, {
